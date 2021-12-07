@@ -1,0 +1,79 @@
+<div class="container col-8">
+  <div class="p-3 my-3 card">
+    <ng-container *ngIf="!isQuizCompleted">
+      <h4>{{ name }} عزیز خوش آمدید.</h4>
+      <div class="mt-3 d-flex justify-content-between">
+        <p>زمان :‌ {{ counter }} ثانیه</p>
+        <p>سوال {{ currentQuestion + 1 }} از 9</p>
+        <p>{{ point }} امتیاز</p>
+      </div>
+      <div class="mb-4 progress">
+        <div
+          class="progress-bar progress-bar-striped bg-success"
+          role="progressbar"
+          [ngStyle]="{ width: progress + '%' }"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <div class="question-box">
+        <div class="mb-2 card">
+          <div class="card-body">
+            <h6>{{ questionList[currentQuestion]?.questionText }}</h6>
+          </div>
+        </div>
+        <div
+          class="mb-2 card"
+          *ngFor="let option of questionList[currentQuestion]?.options"
+        >
+          <div
+            class="card-body"
+            appBgColor
+            [isCorrect]="option.correct"
+            (click)="answer(currentQuestion + 1, option)"
+          >
+            {{ option.text }}
+          </div>
+        </div>
+      </div>
+      <div class="mt-2 d-flex justify-content-between">
+        <button
+          [disabled]="currentQuestion === 0"
+          class="btn"
+          (click)="previousQuestion()"
+        >
+          <i class="fas fa-chevron-right fa-2x"></i>
+        </button>
+        <button class="btn" (click)="resetQuiz()">
+          <i class="fas fa-undo fa-2x"></i>
+        </button>
+        <button
+          [disabled]="currentQuestion === questionList.length"
+          class="btn"
+          (click)="nextQuestion()"
+        >
+          <i class="fas fa-chevron-left fa-2x"></i>
+        </button>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="isQuizCompleted">
+      <div class="gap-4 d-flex flex-column">
+        <h4>تبریک ! شما این تست را با موفقیت به اتمام رساندید.</h4>
+        <h6>نتایج شما :</h6>
+        <p>تعداد سوالات‌ : {{ questionList.length }}</p>
+        <p>تعداد جواب های درست : {{ correctAnswer }}</p>
+        <p>تعداد جواب های اشتباه : {{ inCorrectAnswer }}</p>
+        <p>امتیاز شما : {{ point }}</p>
+        <button
+          (click)="resetQuiz()"
+          class="btn btn-primary col-2"
+          [routerLink]="'/home'"
+        >
+          شروع دوباره
+        </button>
+      </div>
+    </ng-container>
+  </div>
+</div>

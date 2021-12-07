@@ -1,0 +1,166 @@
+{
+  "questions": [
+    {
+      "questionText": "TypeScript از کدام یک از موارد زیر برای تعیین نوع استفاده می کند؟",
+      "options": [
+        {
+          "text": ":",
+          "correct": true
+        },
+        {
+          "text": ";"
+        },
+        {
+          "text": "!"
+        },
+        {
+          "text": "&"
+        }
+      ]
+    },
+    {
+      "questionText": "کدام یک از موارد زیر در TypeScript استفاده نمی شود؟",
+      "options": [
+        {
+          "text": "number"
+        },
+        {
+          "text": "string"
+        },
+        {
+          "text": "boolean"
+        },
+        {
+          "text": "enum",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "چگونه می توانیم ویژگی ها و متدهای یک شی را در TypeScript مشخص کنیم؟",
+      "options": [
+        {
+          "text": "Use classes."
+        },
+        {
+          "text": "Use interfaces.",
+          "correct": true
+        },
+        {
+          "text": "Use enums."
+        },
+        {
+          "text": "Use async/await."
+        }
+      ]
+    },
+    {
+      "questionText": "چگونه می توان آرایه ای از اعداد را در TypeScript نوشت؟",
+      "options": [
+        {
+          "text": "@number"
+        },
+        {
+          "text": "number[]",
+          "correct": true
+        },
+        {
+          "text": "number!"
+        },
+        {
+          "text": "number?"
+        }
+      ]
+    },
+    {
+      "questionText": "در کدام یک از اینها یک کلاس پارامتر می گیرد؟",
+      "options": [
+        {
+          "text": "constructor",
+          "correct": true
+        },
+        {
+          "text": "destructor"
+        },
+        {
+          "text": "import"
+        },
+        {
+          "text": "subscribe"
+        }
+      ]
+    },
+    {
+      "questionText": "کدام یک اصلاح کننده دسترسی نیست؟",
+      "options": [
+        {
+          "text": "private"
+        },
+        {
+          "text": "protected"
+        },
+        {
+          "text": "public"
+        },
+        {
+          "text": "async",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "کدام کلمه کلیدی به ما امکان می دهد اطلاعات را بین فایل ها در TypeScript به اشتراک بگذاریم؟",
+      "options": [
+        {
+          "text": "import"
+        },
+        {
+          "text": "export",
+          "correct": true
+        },
+        {
+          "text": "async"
+        },
+        {
+          "text": "constructor"
+        }
+      ]
+    },
+    {
+      "questionText": "کدام روش آرایه ای برای تولید یک آرایه جدید بر اساس یک شرط است؟",
+      "options": [
+        {
+          "text": "filter",
+          "correct": true
+        },
+        {
+          "text": "map"
+        },
+        {
+          "text": "async"
+        },
+        {
+          "text": "enum"
+        }
+      ]
+    },
+    {
+      "questionText": "چگونه یک خاصیت در یک کلاس قابل دسترسی است؟",
+      "options": [
+        {
+          "text": "Using this.propertyName",
+          "correct": true
+        },
+        {
+          "text": "Accessors"
+        },
+        {
+          "text": "Destructuring"
+        },
+        {
+          "text": "Arrow function"
+        }
+      ]
+    }
+  ]
+}

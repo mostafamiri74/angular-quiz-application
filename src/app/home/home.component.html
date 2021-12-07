@@ -1,0 +1,15 @@
+<div class="container d-flex flex-column gap-4 py-5">
+  <h2>به اپلیکیشن تست انگولار خوش آمدید.</h2>
+  <h4>این تست شامل ۹ سوال می باشد که هر سوال ۱۰ امتیاز دارد.</h4>
+  <h3>قوانین</h3>
+  <ol>
+    <li>برای هر جواب درست شما ۱۰ امتیاز میگیرید.</li>
+    <li>برای هر جواب اشتباه شما ۱۰ امتیاز از دست میدهید..</li>
+    <li>شما ۶۰ ثانیه زمان برای پاسخ به هر سوال دارید.</li>
+  </ol>
+  <div class="col-7">
+    <label for="name">نام خود را وارد کنید.</label>
+    <input #name type="text" class="form-control my-4" name="name" id="name" />
+  </div>
+  <button (click)="startQuiz()" class="btn btn-primary col-2">شروع تست</button>
+</div>
